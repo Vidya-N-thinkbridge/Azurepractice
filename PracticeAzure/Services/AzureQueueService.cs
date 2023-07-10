@@ -23,7 +23,7 @@ namespace PracticeAzure.Services
 
         public bool PushToQueue(string queueName, string message)
         {
-            //adding comment
+            
             CreateQueue(queueName);
             queue.SendMessage(message);
             return true;
